@@ -11,7 +11,7 @@ import FetchChannel from "../FetchChannel/FetchChannel";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 
 function App() {
-  const loggedin = true;
+  const loggedin = false;
 
   return (
     <div className="App">

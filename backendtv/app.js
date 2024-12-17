@@ -18,7 +18,7 @@ const cors = require("cors");
 
 app.use(helmet());
 app.use(morgan("dev"));
-app.use(cors());
+app.use(cors('*'));
 
 app.use(express.json());
 

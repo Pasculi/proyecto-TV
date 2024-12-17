@@ -3,7 +3,7 @@ import "./Header.css";
 import logo from "../../images/layout_set_logo.png";
 import { Link, useNavigate } from "react-router-dom";
 
-function Header(nombre) {
+function Header() {
   const [keyword, setKeyword] = useState("");
 
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ function Header(nombre) {
     <>
       <div className="header">
         <div className="header-container">
-          <div>
+          <div className="header-logo-container">
             <img className="header-logo" src={logo} alt="" />
           </div>
           <div className="container-header-title">

@@ -9,7 +9,7 @@ const DB = process.env.PASSWORS_DB
 
     mongoose.connect(`mongodb+srv://jsepulveda:${DB}@televisiondata.7mfoh.mongodb.net/`)
     .then(() => {
-        console.log('Connected to MongoDB');
+        console.log('Connected to MongoDB.');
     })
 
 

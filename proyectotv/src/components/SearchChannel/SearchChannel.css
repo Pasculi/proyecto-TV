@@ -210,7 +210,7 @@ select {
   margin    : 20px;
 }
 
-@media screen and (max-width: 769px) {
+/* @media screen and (max-width: 769px) {
   .main-channel {
     width: 100%;
   }
@@ -231,4 +231,4 @@ select {
     width: 100%;
     margin-bottom: 10px;
   }
-}
+} */

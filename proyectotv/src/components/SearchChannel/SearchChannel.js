@@ -1,6 +1,5 @@
 import { Link, useSearchParams } from "react-router-dom";
 import "./SearchChannel.css";
-import "../Card/Card.css";
 import { useEffect, useState, useMemo } from "react";
 import api from "../utils/api";
 

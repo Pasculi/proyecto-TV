@@ -152,3 +152,12 @@ a {
 .popup-contacto-visible {
     visibility: visible;
 }
+
+
+@media screen and (max-width: 600px) {
+
+    .container-datail-item{
+        width: 90vw;
+    }
+
+}

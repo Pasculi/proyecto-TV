@@ -14,11 +14,15 @@ const Contact = require("./routes/contact.route");
 const { mongoose } = require("./config/config.mongoose");
 const morgan = require("morgan");
 const cors = require("cors");
+/* const corsOptions = {
+  origin: 'https://example.com',
+  methods: 'GET,POST,PUT,DELETE',
+  allowedHeaders: 'Content-Type',
+}; */
 
-
+app.use(cors());
 app.use(helmet());
 app.use(morgan("dev"));
-app.use(cors('*'));
 
 app.use(express.json());
 

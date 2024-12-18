@@ -1,18 +1,17 @@
 .app-container {
   display        : flex;
-  width          : 1024px;
+  width          : 100%;
   min-height         : 100%;
   flex-wrap: wrap;
   justify-content: center;
   gap     : 20px;
 }
 
-.search-error {
-  position: absolute;
-  top: 300px;
+.search-error {  
   color: red;
   font-size: xx-large;
   font-weight: bold;
+  text-align: center;
 }
 
 .search-total {
@@ -24,6 +23,7 @@
   font-weight: bold;
   color: #214070;
   font-size: 24px;
+  padding-left: 30px;
 }
 
 
@@ -208,4 +208,27 @@ select {
   font-size : 1.2rem;
   color     : gray;
   margin    : 20px;
+}
+
+@media screen and (max-width: 769px) {
+  .main-channel {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .container-principal-channel {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .data-channel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+  }
+  .btn{
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }

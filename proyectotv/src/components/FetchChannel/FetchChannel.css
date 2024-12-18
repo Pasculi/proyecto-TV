@@ -29,7 +29,7 @@ select{
   height: 100%;
   display  : flex;
   flex-wrap: wrap;
-  gap      : 20px;
+  gap      : 30px;
   margin   : auto;
 }
 .data-channel{
@@ -172,6 +172,3 @@ select{
 }
 
 
-@media screen and (max-width:769px){
-  
-}

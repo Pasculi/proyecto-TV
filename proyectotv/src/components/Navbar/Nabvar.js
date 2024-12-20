@@ -13,7 +13,7 @@ const Nabvar = ({ nombre }) => {
               Inicio
             </Link>
           </li>
-          {nombre.nombre !== "Jorge" ? (
+          {/* {nombre.nombre !== "Jorge" ? (
             <li>
               <Link className="navbar-links-item" to="/admin">
                 Admin
@@ -37,7 +37,7 @@ const Nabvar = ({ nombre }) => {
             </>
           ) : (
             " "
-          )}
+          )} */}
         </ul>
       </div>
     </>

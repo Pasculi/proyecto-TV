@@ -7,6 +7,7 @@
     min-height     : 150px;
     background     : #5A7EBE;
     border-top     : 5px solid #FFA100;
+    user-select: none;
 }
 
 .header-container {

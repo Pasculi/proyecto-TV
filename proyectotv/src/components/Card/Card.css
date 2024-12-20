@@ -2,6 +2,7 @@
   width: 1024px;
   min-height: 100%;
   margin: auto;
+  user-select: none;
 }
 
 .select-total-page {

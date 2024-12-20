@@ -5,6 +5,7 @@
     height: 60px;
     background: #214070;
     margin-bottom:20px;
+    user-select: none;
 }
 .navbar-links{
     display: flex;

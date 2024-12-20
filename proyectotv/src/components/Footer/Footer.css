@@ -9,4 +9,5 @@
   background: #282C38;
   color: #fff;
   margin-top:20px;
+  user-select: none;
 }

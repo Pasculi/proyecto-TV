@@ -27,7 +27,7 @@ function App() {
               <Manager />
             </ProtectedRoute>
           }
-        />
+          />
           <Route path="monitoreo" element={<Monitoreo />} />
           <Route path="details/:id" element={<DetailsCard />} />
           <Route path="channel" element={<FetchChannel />} />

@@ -25,6 +25,6 @@ class Api {
   }
 }
 
-const api = new Api(`http://localhost:5000/api/v1/`);
+const api = new Api(`http://192.168.5.224:5000/api/v1`);
 
 export default api;

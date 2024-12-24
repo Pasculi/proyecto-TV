@@ -11,6 +11,7 @@ const Card = ({
   pageCurrent,
   totalPages,
   dataChannel,
+  loader
 }) => {
 
 

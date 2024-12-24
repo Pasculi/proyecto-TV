@@ -20,12 +20,16 @@ const morgan = require("morgan");
   allowedHeaders: 'Content-Type',
 }; */
 const cors = require("cors");
+
 const allowedCors = [
   "http://localhost:8000",
   "http://localhost:8001",
-  "http://localhost:8000",
-  "http://localhost:8000/manager",
-  "http://localhost:8000/admin",
+  "http://www.tv-operaciones.cl",
+  "http://tv-operaciones.cl",
+  "http://www.tv-operaciones.cl/manager",
+  "http://www.tv-operaciones.cl/admin",
+  "http://tv-operaciones.cl/manager",
+  "http://tv-operaciones.cl/admin",
 ];
 
 app.use((req, res, next) => {

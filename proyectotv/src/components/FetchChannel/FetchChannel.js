@@ -3,14 +3,11 @@ import "./FetchChannel.css";
 import api from "../utils/api";
 import Card from "../Card/Card";
 
-
 const FetchChannel = () => {
   const [dataChannel, setDataChannel] = useState([]);
-  const [dataRadios, setDataRadios] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [totalDocs, setTotalDocs] = useState(0);
   const [pageCurrent, setPageCurrent] = useState(1);
-  const [totalPage, setTotalPage] = useState("");
   const [hasNextPage, setHasNextPage] = useState(true);
   const [hasPrevPage, setHasPrevPage] = useState(false);
   const [limit, setLimit] = useState(9);
@@ -22,8 +19,6 @@ const FetchChannel = () => {
     return savedPage ? parseInt(savedPage, 10) : 1;
   });
 
-
-
   const fetchData = () => {
     setIsLoading(true); // Mostrar loader al inicio
     setError(null); // Reiniciar error
@@ -32,7 +27,6 @@ const FetchChannel = () => {
       .then((data) => {
         setPageCurrent(data.page);
         setDataChannel(data.docs);
-        setTotalPage(data.limit);
         setTotalDocs(data.totalDocs);
         setHasNextPage(data.hasNextPage);
         setHasPrevPage(data.hasPrevPage);
@@ -44,7 +38,6 @@ const FetchChannel = () => {
         setIsLoading(false); // Ocultar loader incluso si hay error
       });
   };
-
 
   useEffect(() => {
     fetchData();
@@ -90,16 +83,17 @@ const FetchChannel = () => {
   };
 
   if (isLoading) {
-    return loader();
+    return loader(); // Mostrar el loader mientras se cargan los datos
   }
 
   if (error) {
-    return errorComponent();
+    return errorComponent(); // Mostrar el mensaje de error si ocurre un problema
   }
 
   return (
     <>
       <Card
+        loader={loader}
         pageNextChange={pageNextChange}
         pagePrevChange={pagePrevChange}
         selectLimit={selectLimit}
